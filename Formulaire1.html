@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:lightgoldenrodyellow;">
+    <h1>Fiche d'identité</h1>
+</hr>
+<form method="POST" action="traitement.php">
+    <fieldset>
+        <legend><h2><em>Civilité</em></h2></legend>
+        <label for="Nom"><em>Nom</em></label><input type="text" name="Nom" id="Nom" autofocus />
+        <label for="Prenoms"><em>Prénoms</em></label><input type="text" name="Prenoms" id="Prenoms" />
+        <br/>
+    
+    <p>    
+        <label for="naissance">Date de naissance</label> : 
+        <input type="date" name="naissance" id="naissance" placeholder="30/05/2004" />
+        <br />
+    </p>
+    <p>     
+        <em>Sexe</em></br>
+        <input type="radio"  name="Sexe" value="homme" id="homme" /> <label for="homme">homme</label><br/>
+        <input type="radio" name="Sexe" value="femme" id="femme" /> <label for="femme">femme</label><br/>
+    </p>
+    <p>
+        <em>Nationalité</em></br>
+        <select name="pays" id="pays">
+            <option value="bénin">Béninoise</option>
+            <option value="france">Française</option>
+            <option value="espagne">Espagnole</option>
+            <option value="italie">Italienne</option>
+            <option value="canada">Canadienne</option>
+            <option value="etats-unis">Etasunienne</option>
+            <option value="chine">Chinoise</option>
+            <option value="japon">Japonnaise</option>
+            <option value="sénegal">Sénégalaise</option>
+            <option value="côte d'ivoire">Ivoirienne</option>
+            <option value="cameroon">Cameroonaise</option>
+        </select>
+    </p></br>
+    </fieldset>
+    <p>
+    <fieldset>
+        <legend><h2><em>Vos souhaits</em></h2></legend>
+        <em class="1" style="text-align: left;"><u>Status</u></em></br>
+        <input type="checkbox" name="étudiant" id="étudiant"/><label for="étudiant">Etudiant</label></br>
+        <input type="checkbox" name="demandeur" id="demandeur"/><label for="demandeur">Demandeur d'emplois</label></br>
+        <input type="checkbox" name="travailleur" id="travailleur"/><label for="travailleur">Travailleur</label></br>
+        <input type="checkbox" name="non defini" id="non defini"/><label for="non defini">Non defini</label></br>
+        <em class="2" style="text-align: right;"><u>voeux</u></em><br>
+        <input type="radio" name="souhait" value="riche" id="riche"/><label for="riche">Etre riche</label><br>
+        <input type="radio" name="souhait" value="celebre" id="celebre"/><label for="celebre">Etre célèbre</label><br>
+        <input type="radio" name="souhait" value="intelligent" id="intelligent"/><label for="intelligent">Etre <strong>encore</strong> plus intelligent</label><br>
+        <input type="radio" name="souhait" value="roi des pirates" id="roi des pirates"/> <label for="roi des pirates"><strong>Devenir Roi des pirates</strong></label><br>
+        <input type="radio" name="souhait" value="autre" id="autre"/> <label for="autre">Autre...</label><br>
+    </fieldset> 
+    </p>   
+    <p>
+    <fieldset>
+    <legend><h2><em>Coordonnées</em></h2></legend>
+    <label for="email">Adresse électronique</label>
+    <input type="email" name="email" id="email" required/>
+    <label for="tel">Téléphone</label>
+    <input type="tel" name="tel" id="tel" required/>
+    </fieldset>
+    </p>
+</form>
+</body>
+</html>
